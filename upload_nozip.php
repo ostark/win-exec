@@ -7,8 +7,6 @@ $src    = $target = 'transfer.txt';
 
 echo 'DIRECTORY_SEPARATOR: ' . DIRECTORY_SEPARATOR . PHP_EOL;
 
-file_put_contents($src, '1' . PHP_EOL . '2' . PHP_EOL . '3');
-
 $commands = [
     'string_double_quotes' => 'cat ' . $src . ' | ssh ' . $remote . ' "cat > ' . $target . '"',
     'string_single_quotes' => "cat {$src} | ssh {$remote} 'cat > {$target}'",
