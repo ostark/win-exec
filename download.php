@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-$remote = 'async@deploy.eu2.frbit.com';
+$remote = $argv[1];
 $src    = $target = 'transfer.txt';
 
 echo 'DIRECTORY_SEPARATOR: ' . DIRECTORY_SEPARATOR . PHP_EOL;
